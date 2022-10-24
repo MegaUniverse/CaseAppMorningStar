@@ -7,8 +7,8 @@ namespace CaseAppProducts.Repositorio
     {
         ProdutoModel ListarPorId (int id);
         List<ProdutoModel> BuscarTodos();
-        ProdutoModel Adicionar(ProdutoModel contato);
-        ProdutoModel Atualizar (ProdutoModel contato);
+        ProdutoModel Adicionar(ProdutoModel produto);
+        ProdutoModel Atualizar (ProdutoModel produto);
 
         bool Apagar(int id);
         
