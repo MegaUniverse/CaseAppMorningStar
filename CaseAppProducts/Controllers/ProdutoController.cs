@@ -43,16 +43,16 @@ namespace CaseAppProducts.Controllers
         }
 
         [HttpPost]  //informando que o metodo é do tipo http post
-        public IActionResult Criar(ProdutoModel produto)
+        public IActionResult Criar(ProdutoModel prod)
         {
-            _produtosRepositorio.Adicionar(produto);
+            _produtosRepositorio.Adicionar(prod);
             return RedirectToAction("Index"); //redireciona para o Index
         }
 
         [HttpPost]  //informando que o metodo é do tipo http post
-        public IActionResult Alterar(ProdutoModel contato)
+        public IActionResult Alterar(ProdutoModel prod)
         {
-            _produtosRepositorio.Atualizar(contato);
+            _produtosRepositorio.Atualizar(prod);
             return RedirectToAction("Index"); //redireciona para o Index
         }
     }
